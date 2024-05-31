@@ -500,6 +500,7 @@ print_r($array2); // Output: Array ( [0] => one [1] => two [2] =
 $squared = array_map(function($n) {
     return $n * $n;
 }, $numbers);
+
 print_r($squared); // Output: Array ( [0] => 1 [1] => 4 [2] => 9 [3] => 16 [4] => 25 )
 Example 2: Using array_filter()
 Description: Filters elements of an array using a callback function.
@@ -523,4 +524,6 @@ $sum = array_reduce($numbers, function($carry, $item) {
 }, 0);
 echo $sum; // Output: 15*/
 
+//array_fill(int $start_index, int $count, mixed $value): array
+//$charArray = array_fill(0, 5, $char[$zero]);
 ?>
