@@ -138,3 +138,62 @@ echo preg_replace("/php/i", "JavaScript", "PHP is fun"); // Output: JavaScript i
 //----------------------------------------------------------------------
 
 
+Array Creation and Manipulation
+array() - Creates an array.
+
+php
+
+$array = array(1, 2, 3, 4);
+array_push() - Adds one or more elements to the end of an array.
+
+php
+
+$array = array("red", "green");
+array_push($array, "blue", "yellow");
+// $array is now array("red", "green", "blue", "yellow")
+array_pop() - Pops the element off the end of the array.
+
+php
+
+$array = array("red", "green", "blue");
+$popped = array_pop($array); // $popped is "blue", $array is now array("red", "green")
+array_shift() - Shifts an element off the beginning of the array.
+
+php
+
+$array = array("red", "green", "blue");
+$shifted = array_shift($array); // $shifted is "red", $array is now array("green", "blue")
+array_unshift() - Prepends one or more elements to the beginning of an array.
+
+php
+
+$array = array("green", "blue");
+array_unshift($array, "red", "yellow");
+// $array is now array("red", "yellow", "green", "blue")
+Array Sorting
+sort() - Sorts an array in ascending order.
+
+php
+
+$array = array(3, 2, 5, 1, 4);
+sort($array); // $array is now array(1, 2, 3, 4, 5)
+rsort() - Sorts an array in descending order.
+
+php
+
+$array = array(3, 2, 5, 1, 4);
+rsort($array); // $array is now array(5, 4, 3, 2, 1)
+asort() - Sorts an associative array in ascending order, according to the value.
+
+php
+
+$array = array("a" => 3, "b" => 2, "c" => 5);
+asort($array); // $array is now array("b" => 2, "a" => 3, "c" => 5)
+ksort() - Sorts an associative array in ascending order, according to the key.
+
+php
+
+$array = array("a" => 3, "c" => 2, "b" => 5);
+ksort($array); // $array is now array("a" => 3, "b" => 5, "c" => 2)
+usort() - Sorts an array by values using a user-defined comparison function.
+
