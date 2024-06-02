@@ -3,13 +3,13 @@ $chars = ["o", "r", "e", "z", "l", "E"];
 
 $len=0;
 foreach($chars as $c){
-    if($a<$max){
-        $max=$a;
+    if($c<$max){
+        $max=$c;
     }
 }
 // Output
 //"Elzero"
 
-echo $max;
+echo $chars;
 // Output
 //100
