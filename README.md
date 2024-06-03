@@ -442,42 +442,42 @@ PHP provides several functions for sorting arrays. Here are the most commonly us
 
 sort()
 Description: Sorts an array in ascending order.
-Example:
-php
-Copier le code
+
+##################Example:
+
 $array = array(3, 2, 5, 1, 4);
 sort($array);
 print_r($array); // Output: Array ( [0] => 1 [1] => 2 [2] => 3 [3] => 4 [4] => 5 )
 rsort()
 Description: Sorts an array in descending order.
-Example:
-php
-Copier le code
+
+###############Example:
+
 $array = array(3, 2, 5, 1, 4);
 rsort($array);
 print_r($array); // Output: Array ( [0] => 5 [1] => 4 [2] => 3 [3] => 2 [4] => 1 )
 asort()
 Description: Sorts an associative array in ascending order, according to the value.
-Example:
-php
-Copier le code
+
+##############Example:
+
 $array = array("a" => 3, "b" => 2, "c" => 5);
 asort($array);
 print_r($array); // Output: Array ( [b] => 2 [a] => 3 [c] => 5 )
 ksort()
 Description: Sorts an associative array in ascending order, according to the key.
-Example:
-php
-Copier le code
+
+#############Example:
+
 $array = array("a" => 3, "c" => 2, "b" => 5);
 ksort($array);
 print_r($array); // Output: Array ( [a] => 3 [b] => 5 [c] => 2 )
 usort()
 Description: Sorts an array by values using a user-defined comparison function.
-Example:
 
-php
-Copier le code
+################Example:
+
+
 $array = array(3, 2, 5, 1, 4);
 usort($array, function($a, $b) {
     return $a - $b;
@@ -485,9 +485,9 @@ usort($array, function($a, $b) {
 print_r($array); // Output: Array ( [0] => 1 [1] => 2 [2] => 3 [3] => 4 [4] => 5 )
 array_multisort()
 Description: Sorts multiple or multi-dimensional arrays.
+
 Example:
-php
-Copier le code
+
 $array1 = array(3, 2, 5, 1, 4);
 $array2 = array("three", "two", "five", "one", "four");
 array_multisort($array1, $array2);
@@ -502,9 +502,9 @@ $squared = array_map(function($n) {
 print_r($squared); // Output: Array ( [0] => 1 [1] => 4 [2] => 9 [3] => 16 [4] => 25 )
 Example 2: Using array_filter()
 Description: Filters elements of an array using a callback function.
+
 Example:
 
-php
 
 $numbers = array(1, 2, 3, 4, 5, 6);
 $evenNumbers = array_filter($numbers, function($n) {
@@ -513,8 +513,8 @@ $evenNumbers = array_filter($numbers, function($n) {
 print_r($evenNumbers); // Output: Array ( [1] => 2 [3] => 4 [5] => 6 )
 Example 3: Using array_reduce()
 Description: Iteratively reduces the array to a single value using a callback function.
+
 Example:
-php
 
 $numbers = array(1, 2, 3, 4, 5);
 $sum = array_reduce($numbers, function($carry, $item) {
