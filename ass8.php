@@ -31,7 +31,7 @@ echo "<pre>";
 print_r($chars);
 echo "<pre>";
 //METHODE4:
-array_splice($chars,count($chars),0,"D");
+array_splice($chars,count($chars),0,"D");//commencer par 3 
 echo "<pre>";
 print_r($chars);
 echo "<pre>";
